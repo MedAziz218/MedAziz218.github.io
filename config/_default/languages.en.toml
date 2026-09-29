@@ -1,0 +1,14 @@
+label = 'English'
+weight = 1
+title = 'Mohamed Aziz Lahdheri'
+[params]
+  displayName = 'EN'
+  isoCode = 'en'
+  dateFormat = '2 January 2006'
+  description = 'Projects, tutorials, guides, and personal experiences by Mohamed Aziz Lahdheri.'
+[params.author]
+  name = 'Mohamed Aziz Lahdheri'
+  image = 'profile.jpg'
+  links = [{ github = 'https://github.com/MedAziz218' }]
+
+

@@ -1,0 +1,8 @@
+resources/
+.hugo_build.lock
+themes/blowfish/exampleSite/
+themes/blowfish/images/
+themes/blowfish/.claude/
+themes/blowfish/.claude-plugin/
+themes/blowfish/.github/
+themes/blowfish/.vscode/

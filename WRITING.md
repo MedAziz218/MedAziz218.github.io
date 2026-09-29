@@ -1,27 +1,39 @@
-# Publishing a post
+# Writing with Hugo
 
-Add an entry to `posts.json`, then run `node build.mjs`. Each published post gets its own page and appears on its topic pages. Drafts are excluded. The home page shows the five most recent published posts.
+Each post lives in its own folder under `content/posts/`, with an `index.md` file and optional images beside it.
 
-Use this structure, replacing the example fields with your own content:
+Create a draft from the project directory:
 
-```json
-{
-  "slug": "my-first-post",
-  "title": "Your post title",
-  "date": "2026-09-28",
-  "type": "Tutorial",
-  "summary": "A short description of what readers will learn.",
-  "tags": ["Linux", "Embedded systems"],
-  "draft": true,
-  "body": [
-    {"type": "paragraph", "text": "Your introduction."},
-    {"type": "heading", "text": "Getting started"},
-    {"type": "paragraph", "text": "Explain the steps or share your experience."},
-    {"type": "code", "text": "Your code goes here."}
-  ]
-}
+```powershell
+hugo new content posts/my-first-post/index.md
 ```
 
-Set `draft` to `false` when ready. Types can be Tutorial, Guide, Project notes, Experience, or another description that fits. Topic tags are independent of post type and can be combined freely. Text is escaped for safe display; HTML is not supported in post text. Dates use YYYY-MM-DD. Reading time is calculated from content.
+In this workspace Hugo is installed locally; use `../../work/hugo-compatible/hugo.exe` in place of `hugo` if it is not on your PATH.
 
-Keep unpublished work information out of public posts. The current biography is intentionally brief until updated career details are supplied.
+A post looks like this:
+
+```markdown
+---
+title: "Your post title"
+date: 2026-09-28
+draft: true
+summary: "A short introduction to the post."
+tags: ["Linux", "Embedded systems"]
+categories: ["Tutorial"]
+---
+
+Your introduction goes here.
+
+## Getting started
+
+Write Markdown here, including code blocks and images.
+```
+
+Use categories for Tutorial, Guide, Project notes, or Experience, and tags for related technologies or topics. Hugo automatically generates the tag and category pages. Blowfish adds reading time, a table of contents, code highlighting, search, and a light/dark switch.
+
+Preview drafts with `hugo server -D`. Set `draft: false` when ready, then build with `hugo --minify`. Building updates `dist/`; publishing is a separate step.
+
+For an image beside `index.md`, use `![Description](photo.jpg)`. Naming a suitable image `feature.jpg` makes it the post's featured image in Blowfish.
+
+Edit `content/about.md` for your biography and `content/projects/_index.md` for projects. Theme settings are in `config/_default/`. Your updated work biography and first post are still pending.
+

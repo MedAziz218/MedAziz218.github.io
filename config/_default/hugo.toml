@@ -1,0 +1,16 @@
+baseURL = 'https://medaziz218-portfolio.saleman3632.chatgpt.site/'
+locale = 'en'
+defaultContentLanguage = 'en'
+title = 'Mohamed Aziz Lahdheri'
+theme = 'blowfish'
+publishDir = 'dist'
+enableRobotsTXT = true
+summaryLength = 30
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+[permalinks]
+  posts = '/posts/:slug/'
+

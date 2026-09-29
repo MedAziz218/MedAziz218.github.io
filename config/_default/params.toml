@@ -1,0 +1,52 @@
+colorScheme = 'blowfish'
+defaultAppearance = 'dark'
+autoSwitchAppearance = false
+enableSearch = true
+enableCodeCopy = true
+mainSections = ['posts']
+highlightCurrentMenuArea = true
+smartTOC = true
+[header]
+  layout = 'fixed'
+[homepage]
+  layout = 'background'
+  showRecent = true
+  showRecentItems = 18
+  showMoreLink = true
+  showMoreLinkDest = '/posts/'
+  cardView = true
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = false
+[article]
+  showDate = true
+  showDateOnlyInArticle = true
+  showAuthor = true
+  showHero = true
+  heroStyle = 'basic'
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 6
+  showTaxonomies = true
+  showWordCount = false
+[list]
+  showSummary = false
+  showTableOfContents = false
+  showCards = true
+  groupByYear = false
+  cardView = true
+  cardViewScreenWidth = false
+[taxonomy]
+  showTermCount = true
+[term]
+  groupByYear = false
+  cardView = false
+[footer]
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
